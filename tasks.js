@@ -108,8 +108,8 @@ function markDone(id) {
   }
 }
 
-writeTasks("a");
-writeTasks("b");
+writeTasks(["a", "b"]);
+writeTasks(["b", "c"]);
 console.log(readTasks());
 
 
