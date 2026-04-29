@@ -1,7 +1,12 @@
 import google.generativeai as genai
+import os
+from dotenv import load_dotenv
 
+load_dotenv()
+
+api_key = os.getenv('MY_API_KEY')
 genai.list_models()
-genai.configure(api_key="AIzaSyBtFfLr-iylJ80gzgrccA_A3yV_QJXdCJE")
+genai.configure(api_key)
 model = genai.GenerativeModel('gemini-3-flash-preview')
 
 print("--- AI Assistant---")
