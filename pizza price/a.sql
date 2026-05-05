@@ -1,1 +1,0 @@
-SELECT pizza_name_id, AVG(total_price) FROM new_schema.pizza_sales GROUP BY pizza_name_id;
